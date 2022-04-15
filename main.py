@@ -17,7 +17,7 @@ from transformers import TFBertModel, BertConfig, BertTokenizerFast
 
 model_name = 'bert_v13'
 
-data_dir = Path('../input/commonlitreadabilityprize')
+data_dir = Path('/commonlitreadabilityprize')
 train_file = data_dir / 'train.csv'
 test_file = data_dir / 'test.csv'
 sample_file = data_dir / 'sample_submission.csv'
@@ -28,7 +28,7 @@ trn_encoded_file = output_dir / 'trn.enc.joblib'
 val_predict_file = output_dir / f'{model_name}.val.txt'
 submission_file = 'submission.csv'
 
-pretrained_dir = '../input/tfbert-large-uncased'
+pretrained_dir = '/tfbert-large-uncased'
 
 id_col = 'id'
 target_col = 'target'
